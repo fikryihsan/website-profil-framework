@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detail Profile</title>
+
+    <!-- 🔥 Vue JS (Framework) -->
+    <script src="https://unpkg.com/vue@3"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="detail.html">Detail</a>
+</nav>
+
+<div id="app" class="container">
+
+    <!-- EDUCATION -->
+    <h2>Education Journey</h2>
+
+    <div class="education">
+        <div class="edu-item" v-for="item in education">
+            <h3>{{ item.school }}</h3>
+            <p class="year">{{ item.year }}</p>
+            <p>{{ item.major }}</p>
+        </div>
+    </div>
+
+    <!-- EXPERIENCE -->
+    <h2>Experience</h2>
+
+    <table>
+        <tr>
+            <th>Year</th>
+            <th>Description</th>
+        </tr>
+
+        <tr v-for="exp in experience">
+            <td>{{ exp.year }}</td>
+            <td>{{ exp.desc }}</td>
+        </tr>
+    </table>
+
+</div>
+
+<!-- 🔥 SCRIPT VUE -->
+<script>
+const { createApp } = Vue;
+
+createApp({
+    data() {
+        return {
+            education: [
+                {
+                    school: "UIN Sultan Syarif Kasim Riau",
+                    year: "2024 - Present",
+                    major: "Informatics Engineering"
+                },
+                {
+                    school: "MA Hidayatul Ma'arifiyah",
+                    year: "2021 - 2024",
+                    major: "Science Major"
+                },
+                {
+                    school: "MTS Hidayatul Ma'arifiyah",
+                    year: "2018 - 2021",
+                    major: "General Education"
+                }
+            ],
+
+            experience: [
+                {
+                    year: "2022",
+                    desc: "Participated in English Speech Competition"
+                },
+                {
+                    year: "2026",
+                    desc: "Created a simple website"
+                }
+            ]
+        }
+    }
+}).mount('#app');
+</script>
+
+</body>
+</html>

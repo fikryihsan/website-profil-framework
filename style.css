@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: linear-gradient(to right, #011d51, #2a5298);
+    color: white;
+    text-align: center;
+}
+
+nav {
+    background-color: rgba(0,0,0,0.5);
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+    cursor:pointer ;
+}
+
+nav a:hover {
+    color: rgba(255, 191, 0, 0.703);
+}
+
+
+.container {
+    margin-top: 40px;
+}
+
+.foto {
+    border-radius: 200%;
+    width: 150px;
+}
+
+.intro h1 {
+    font-size: 35px;
+    margin-bottom: 5px;
+}
+
+.intro h2 {
+    font-size: 35px;
+    margin: 0;
+}
+
+.intro span {
+    color: #4da6ff; 
+}
+
+.intro p {
+    color: #ffffff; 
+    max-width: 500px;
+    margin: 15px auto;
+    line-height: 1.6;
+}
+
+.data-diri {
+    list-style: none;
+    padding: 0;
+}
+
+.data-diri li {
+    margin: 8px 0;
+}
+
+.education {
+    margin-top: 20px;
+}
+
+.edu-item {
+    background: rgba(255,255,255,0.1);
+    padding: 15px;
+    margin: 15px auto;
+    width: 50%;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.edu-item:hover {
+    background: rgba(255,255,255,0.2);
+    transform: scale(1.03);
+}
+
+.edu-item h3 {
+    margin: 0;
+}
+
+.year {
+    font-size: 14px;
+    color: #ffd166;
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid white;
+    padding: 10px;
+}
+
+.custom-card {
+    background: rgba(255,255,255,0.1);
+    color: white;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.custom-card:hover {
+    transform: scale(1.05);
+    background: rgba(255,255,255,0.2);
+}
+
+.table-container {
+    width: 80%;
+    margin: auto;
+}
+
+.year {
+    color: #ffd166;
+    font-size: 14px;
+}
